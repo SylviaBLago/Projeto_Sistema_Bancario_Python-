@@ -11,9 +11,9 @@ menu = """
     #############################
 """
 
-opcao = int(input(menu))
-
 while True:
+
+    opcao = int(input(menu))
 
     if opcao == 1: #opção saque
 
@@ -57,11 +57,10 @@ while True:
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"Saldo: R${saldo:.2f}")
         print("############################")
+        
     elif opcao == 0: #opcão sair
         print("BANCO SA agradece sua parceria! \n Tenha um bom dia!")
         break
+        
     else:
         print("Opção inválida! \n Selecione novamente a opção desejada")
-
-    
-    opcao = int(input(menu))
